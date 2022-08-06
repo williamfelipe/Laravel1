@@ -14,6 +14,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        $this->call([
+            UsersSeeder::class
+        ]);
     }
 }
+//CRTL+J to access terminal
+//docker-compose exec app bash
+//php artisan db:seed 
